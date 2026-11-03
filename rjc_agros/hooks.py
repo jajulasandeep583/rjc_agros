@@ -272,3 +272,6 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+after_install = "rjc_agros.setup.install.after_install"
+after_migrate = "rjc_agros.setup.install.after_migrate"
