@@ -11,15 +11,17 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "rjc_agros",
-# 		"logo": "/assets/rjc_agros/logo.png",
-# 		"title": "RJC Agros",
-# 		"route": "/rjc_agros",
-# 		"has_permission": "rjc_agros.api.permission.has_app_permission",
-# 	}
-# ]
+# India Payroll (frappe/india-payroll) ships its apps-screen entry commented out, so its module is
+# reachable only by URL. The tile is declared here; it opens the app's own workspace.
+add_to_apps_screen = [
+	{
+		"name": "india_payroll",
+		"logo": "/assets/rjc_agros/images/india-payroll-logo.svg",
+		"title": "India Payroll",
+		"route": "/desk/india-payroll",
+		"has_permission": "hrms.hr.utils.check_app_permission",
+	}
+]
 
 # The dock, the rail down the left of the desk, is a document rather than a hook. Author it in
 # Manage Dock on a developer-mode site and press Export to App, and it is written to
